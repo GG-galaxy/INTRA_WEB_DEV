@@ -7,3 +7,105 @@
   --col5: rgba(100, 17, 17, 0.62);
   --col6: #d8d8d8;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to left top, rgba(100, 17, 17, 1), #181818);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.Nav{
+  background-color: var(--col3);
+  color: white;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Nav > h5{
+  font-size: 20px;
+}
+
+.Nav > h4{
+  font-size: 20px;
+}
+
+.heading{
+  color: white;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.heading-text{
+  border-left: 2px solid var(--col2);
+  border-right: 2px solid var(--col2);
+  padding: 0px 10px;
+  font-size: 24px;
+}
+
+.red-line{
+  background-color: var(--col2);
+  width: 15px;
+  height: 2px;
+  margin: 0 5px;
+  transform: translateY(10px);
+}
+
+.red{
+  color: var(--col2);
+}
+
+.events{
+  display: flex;
+  margin: 15px;
+  margin-top: 50px;
+}
+
+.events > .event-item{
+  color: var(--col6);
+  padding: 5px 20px;
+}
+
+.item-title{
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+}
+
+.event-item:nth-child(2){
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5) 10%, red 90%) 1 100%;
+}
+
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  width: 60vw;
+}
+
+.carousel-item{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item > img{
+  width: 400px;
+  height: 200px;
+}
