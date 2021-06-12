@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INTRA'21</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,7 +16,7 @@
   <div class="container-fluid">
     <div class="Nav">
       <div>
-        <img src="../assets/gx.png" width="50" height="50" />
+        <img src="../assets/gx.png" width="50" height="50" class="logo" />
       </div>
       <h4>INTRA'21</h4>
       <h5>CUrBrain</h5>
@@ -39,7 +40,7 @@
             time to time.
           </p>
         </div>
-        <div class="event-item">
+        <div class="event-item" id="border">
           <h5 class="item-title">Technical Events</h5>
           <p class="item-text">EDGE - the brainchild of Geekonix and the second-largest tech fest in
             Eastern India, is organized by Geekonix with 48+ enthralling events
@@ -58,18 +59,53 @@
           </p>
         </div>
       </div>
-
-      
     </div>
-    <div class="footer">
 
+    <div id="carousel" class="carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="images">
+            <div class="image" id="image1">
+              <img src="../assets/flawless.jpg" />
+              <div class="event-name">Flawless</div>
+            </div>
+            <div class="image" id="image2">
+              <img src="../assets/crypto.jpg" />
+              
+              <div class="event-name">Cryptography</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="images">
+            <div class="image" id="image3">
+              <img src="../assets/webd.png" />
+              <div class="event-name">Web Development</div>
+            </div>
+            <div class="image" id="image4">
+              <img src="../assets/bughunt.jpg" />
+              <div class="event-name">Bug Hunt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="text-center">Made by GG_Galaxy</p>
     </div>
   </div>
 </body>
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </html>
