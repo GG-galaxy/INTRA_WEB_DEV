@@ -45,7 +45,7 @@ body{
 }
 
 #logo{
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   transform-origin: bottom;
 }
@@ -202,7 +202,7 @@ body{
 }
 @keyframes bounce {
 0%   { transform: translateY(0); }
-25%  { transform: translateY(15px); }
+25%  { transform: translateY(10px); }
 50%  { transform: translateY(0px); }
 75%  { transform: translateY(-10px); }
 100% { transform: translateY(0); }
